@@ -1,0 +1,103 @@
+========================================
+AI SIGNAL - START HERE
+========================================
+
+CORRECT ORDER TO RUN BATCH FILES:
+(The numbers tell you the sequence!)
+
+SETUP PHASE (First Time Only):
+┌────────────────────────────────────┐
+│ 0. 0-create-venv.bat (OPTIONAL)   │ ← Run FIRST if you want virtual environment
+│ 1. 1-setup.bat                     │ ← Install dependencies (REQUIRED)
+│ 2. 2-setup-database.bat            │ ← Database setup helper
+│ 3. Edit .env file                  │ ← Add your DATABASE_URL
+│ 4. 3-test-connection.bat           │ ← Verify database works
+└────────────────────────────────────┘
+
+RUN PHASE (Every Time):
+┌────────────────────────────────────┐
+│ 6. 6-run-both.bat                  │ ← Start backend + frontend
+└────────────────────────────────────┘
+
+Then open: http://localhost:3000
+
+========================================
+
+SIMPLE PATH (No Virtual Environment):
+1. Run: 1-setup.bat
+2. Run: 2-setup-database.bat
+3. Edit: .env file
+4. Run: 3-test-connection.bat
+5. Run: 6-run-both.bat
+6. Open: http://localhost:3000
+
+ADVANCED PATH (With Virtual Environment):
+1. Run: 0-create-venv.bat
+2. Run: 1-setup.bat
+3. Run: 2-setup-database.bat
+4. Edit: .env file
+5. Run: 3-test-connection.bat
+6. Run: 6-run-both.bat
+7. Open: http://localhost:3000
+
+========================================
+
+WHAT EACH FILE DOES:
+
+0-create-venv.bat
+  → Creates isolated Python environment
+  → OPTIONAL but recommended
+  → Run BEFORE 1-setup.bat
+
+1-setup.bat
+  → Creates .env file
+  → Installs Python packages
+  → Installs Node packages
+  → REQUIRED
+
+2-setup-database.bat
+  → Shows database setup instructions
+  → Opens SQL file and .env
+  → Helper script
+
+3-test-connection.bat
+  → Tests if database connection works
+  → Run after setting up database
+
+4-run-backend.bat
+  → Starts backend only (port 8000)
+  → For development/testing
+
+5-run-frontend.bat
+  → Starts frontend only (port 3000)
+  → For development/testing
+
+6-run-both.bat
+  → Starts BOTH backend and frontend
+  → USE THIS for normal work
+
+check-python-version.bat
+  → Checks if Python version is compatible
+  → Helper script
+
+========================================
+
+PREREQUISITES:
+✓ Python 3.11 or 3.12 (NOT 3.13!)
+✓ Node.js 18+
+✓ Database (Supabase or PostgreSQL)
+
+========================================
+
+TROUBLESHOOTING:
+- Python 3.13 issues? See: TROUBLESHOOTING-PYTHON313.md
+- Windows help? See: README-WINDOWS.md
+- Quick guide? See: QUICK-START.md
+- Full docs? See: README.md
+
+========================================
+
+READY TO START?
+Run: 1-setup.bat
+
+========================================

@@ -1,0 +1,39 @@
+# FastAPI
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy>=2.0.25
+asyncpg>=0.29.0
+alembic>=1.13.0
+psycopg2-binary>=2.9.9
+
+# AI/NLP
+openai>=1.10.0
+anthropic>=0.18.0
+httpx>=0.26.0
+
+# Web Scraping
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+feedparser>=6.0.10
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+tenacity>=8.2.0
+dateparser>=1.1.8
+aiohttp>=3.9.0
+lxml>=5.1.0
+
+# Logging & Monitoring
+loguru>=0.7.0
+sentry-sdk>=1.40.0
+
+# Scheduling
+APScheduler>=3.10.0
+
+# Note: Using >= instead of == to allow pip to find compatible versions
+# This helps avoid build issues with newer Python versions (3.13+)
